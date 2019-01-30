@@ -1,14 +1,13 @@
 import React from 'react';
 import { Card } from './Card';
 
+
 export const CardList = (props)=>{
     return (
         <div>
-            { props.list.forEach(function(cards) {
-                
-                return  <Card card={props.cards} />
-            })}
+            {props.list.map(listItem =><Card card={listItem} />)}
         </div>
     )
 }
+
 
